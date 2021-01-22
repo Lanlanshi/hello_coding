@@ -1,0 +1,25 @@
+Day1:
+    设置默认Python
+    open ~/.bash
+
+    默认Python版本设置：# Setting PATH for Python 3.9
+    # The original version is saved in .bash_profile.pysave
+    PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
+    export PATH
+    alias python="/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9"
+
+        优秀注释：
+    1. 提供信息的注释
+    2. 对意图的注释
+    3. 阐释
+    4. TO DO注释
+    5. 多行代码注释 '''
+    6. 单行代码注释 cammand + /
+
+Day 2: 文件操作
+file_source=open('scores.text','r') #r模式，文件不存在的时候报错
+file_source=open('scores.text','w') #w模式，当文件不存在时，自动创建一个文件，覆盖源文件内容
+file_source=open('scores.text','x') #x模式：如果不存在，自动创建一个文件；如果文件已经存在，报错
+file_source=open('scores.text','a') #a模式:如果源文件中有内容，会追加到源文件的后面
+
+file_source.write('hello') #覆盖源文件内容
